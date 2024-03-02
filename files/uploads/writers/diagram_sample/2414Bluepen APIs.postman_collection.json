@@ -1,0 +1,794 @@
+{
+	"info": {
+		"_postman_id": "9317724e-f67e-4253-8ab3-8c1601640b33",
+		"name": "Bluepen APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12091792"
+	},
+	"item": [
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "getemailotp.php",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"bhavyaharia100@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/blue-pen-backend/api/student/getemailotp.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blue-pen-backend",
+								"api",
+								"student",
+								"getemailotp.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getnumberotp.php",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number\": 9619305482\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/blue-pen-backend/api/student/getnumberotp.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blue-pen-backend",
+								"api",
+								"student",
+								"getnumberotp.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verifyemailotp.php",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"bhavyaharia100@gmail.com\",\r\n    \"otp\": 1186\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/blue-pen-backend/api/student/verifyemailotp.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blue-pen-backend",
+								"api",
+								"student",
+								"verifyemailotp.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verifynumberotp.php",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number\": \"9619305482\",\r\n    \"otp\": 1045\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/blue-pen-backend/api/student/verifynumberotp.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blue-pen-backend",
+								"api",
+								"student",
+								"verifynumberotp.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signup.php",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\": \"bhavya\",\r\n    \"lastname\": \"haria\",\r\n    \"email\": \"bhavyhara@gmail.com\",\r\n    \"country\": \"India\",\r\n    \"number\": \"910542\",\r\n    \"password\": \"asdfghjkl\",\r\n    \"address\": \"gokuldham\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/blue-pen-backend/api/student/signup.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blue-pen-backend",
+								"api",
+								"student",
+								"signup.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login.php",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"bhavyharia100@gmail.com\",\r\n    \"password\": \"asdfghjkl\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/blue-pen-backend/api/student/login.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blue-pen-backend",
+								"api",
+								"student",
+								"login.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verifytoken.php",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJmaXJzdG5hbWUiOiJiaGF2eWEiLCJsYXN0bmFtZSI6ImhhcmlhIiwiZW1haWwiOiJiaGF2eWhhcmlhMTAwQGdtYWlsLmNvbSIsImV4cCI6MTY3NjkwMDUwM30.S4lRNplqj7LReEFMsaZPsYLK3f63pdBazQGFLCvR6Lw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jwt\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJmaXJzdG5hbWUiOiJiaGF2eWEiLCJsYXN0bmFtZSI6ImhhcmlhIiwiZW1haWwiOiJiaGF2eWhhcmlhMTAwQGdtYWlsLmNvbSIsImV4cCI6MTY3NjkwMDUwM30.S4lRNplqj7LReEFMsaZPsYLK3f63pdBazQGFLCvR6Lw\",\r\n    \"email\": \"bhavyharia100@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/blue-pen-backend/api/student/verifytoken.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blue-pen-backend",
+								"api",
+								"student",
+								"verifytoken.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getpersonaldetails.php",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/blue-pen-backend/api/student/getpersonaldetails.php?id=8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blue-pen-backend",
+								"api",
+								"student",
+								"getpersonaldetails.php"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "submitassignment.php",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "submit",
+									"value": "submit",
+									"description": "submit button",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "5",
+									"description": "user id",
+									"type": "text"
+								},
+								{
+									"key": "domain",
+									"value": "Freelancer",
+									"description": "freelancing or writing assignment",
+									"type": "text"
+								},
+								{
+									"key": "stream",
+									"value": "Engineering",
+									"description": "engg/mdeical/commerce/arts",
+									"type": "text"
+								},
+								{
+									"key": "assignment_type",
+									"value": "[\"Programming / Coding Assignment\"]",
+									"description": "radio buttons",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Malenoma",
+									"description": "title of the assignment",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Detect Malenoma using normal images",
+									"description": "description of the project",
+									"type": "text"
+								},
+								{
+									"key": "course",
+									"value": "Engineering",
+									"description": "user types, engg, law, mba, etc.",
+									"type": "text"
+								},
+								{
+									"key": "level",
+									"value": "Bachelors",
+									"description": "drop down for choice",
+									"type": "text"
+								},
+								{
+									"key": "subject_tags",
+									"value": "[\"Machine Learning, Deep Learning\"]",
+									"description": "subject tags field",
+									"type": "text"
+								},
+								{
+									"key": "deadline",
+									"value": "14/09/2022 12:09:21",
+									"description": "date and time",
+									"type": "text"
+								},
+								{
+									"key": "budget",
+									"value": "12000",
+									"description": "integer",
+									"type": "text"
+								},
+								{
+									"key": "files",
+									"value": "filename1_^_filename2_^_file3_^_file4_^_ifile5_^_",
+									"description": "figure this out",
+									"type": "text"
+								},
+								{
+									"key": "submission_date",
+									"value": "14/09/2022 12:09:21",
+									"description": "assignment submission date time",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/blue-pen-backend/api/student/submitassignment.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blue-pen-backend",
+								"api",
+								"student",
+								"submitassignment.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getassignment.php",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/blue-pen-backend/api/student/getassignment.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blue-pen-backend",
+								"api",
+								"student",
+								"getassignment.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userwallet.php",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/blue-pen-backend/api/student/userwallet.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blue-pen-backend",
+								"api",
+								"student",
+								"userwallet.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buycoins.php",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 8,\r\n    \"coins\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/blue-pen-backend/api/student/buycoins.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blue-pen-backend",
+								"api",
+								"student",
+								"buycoins.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Freelancer",
+			"item": [
+				{
+					"name": "freelancersignup.php (technical)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "submit",
+									"value": "submit",
+									"description": "submit button",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "bhavyaharia100@gmail.com",
+									"description": "freelancer email",
+									"type": "text"
+								},
+								{
+									"key": "email_verified",
+									"value": "1",
+									"description": "email verified bit",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "India",
+									"description": "freelancer country",
+									"type": "text"
+								},
+								{
+									"key": "number",
+									"value": "919619305482",
+									"description": "freelancer mobile number",
+									"type": "text"
+								},
+								{
+									"key": "number_verified",
+									"value": "1",
+									"description": "number verified bit",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "Technical",
+									"description": "Technical or Non-Technical",
+									"type": "text"
+								},
+								{
+									"key": "assignment_type",
+									"value": "[\"Programming / Coding Assignment\"]",
+									"description": "radio",
+									"type": "text"
+								},
+								{
+									"key": "qualification",
+									"value": "BE",
+									"description": "user types qualification",
+									"type": "text"
+								},
+								{
+									"key": "working_hours",
+									"value": "24*7",
+									"description": "user types working hours",
+									"type": "text"
+								},
+								{
+									"key": "subject_tags",
+									"value": "[\"Machine Learning,Machine Learning Using Python\"]",
+									"description": "select subjet tags",
+									"type": "text"
+								},
+								{
+									"key": "past_experience",
+									"value": "5 years",
+									"description": "user types past experience",
+									"type": "text"
+								},
+								{
+									"key": "work_links",
+									"value": "https://blue-pen.vercel.app/freelance/freelancer/technical",
+									"description": "user enters work links",
+									"type": "text"
+								},
+								{
+									"key": "linkedin",
+									"value": "https://www.linkedin.com/",
+									"description": "user enters linkedin link",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "some projects",
+									"description": "user types freelancing experience",
+									"type": "text"
+								},
+								{
+									"key": "assignment",
+									"type": "file",
+									"src": "/C:/Users/hp/Pictures/Capture2.PNG"
+								},
+								{
+									"key": "past_work_files",
+									"type": "file",
+									"src": "/C:/Users/hp/Pictures/Capture2.PNG",
+									"disabled": true
+								},
+								{
+									"key": "resume",
+									"type": "file",
+									"src": "/C:/Users/hp/Pictures/Capture.PNG"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/blue-pen-backend/api/freelancer/freelancersignup.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blue-pen-backend",
+								"api",
+								"freelancer",
+								"freelancersignup.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "freelancersignup.php (non-technical)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "submit",
+									"value": "submit",
+									"description": "submit button",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "bhavyaharia100@gmail.com",
+									"description": "freelancer email",
+									"type": "text"
+								},
+								{
+									"key": "email_verified",
+									"value": "1",
+									"description": "email verified bit",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "India",
+									"description": "freelancer country",
+									"type": "text"
+								},
+								{
+									"key": "number",
+									"value": "919619305482",
+									"description": "freelancer mobile number",
+									"type": "text"
+								},
+								{
+									"key": "number_verified",
+									"value": "1",
+									"description": "number verified bit",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "Non-Technical",
+									"description": "Technical or Non-Technical",
+									"type": "text"
+								},
+								{
+									"key": "assignment_type",
+									"value": "[\"Programming / Coding Assignment\"]",
+									"description": "radio",
+									"type": "text"
+								},
+								{
+									"key": "qualification",
+									"value": "BE",
+									"description": "user types qualification",
+									"type": "text"
+								},
+								{
+									"key": "working_hours",
+									"value": "24*7",
+									"description": "user types working hours",
+									"type": "text"
+								},
+								{
+									"key": "subject_tags",
+									"value": "[\"Machine Learning,Machine Learning Using Python\"]",
+									"description": "selects subject tags",
+									"type": "text"
+								},
+								{
+									"key": "past_experience",
+									"value": "5 years",
+									"description": "user types past experience",
+									"type": "text"
+								},
+								{
+									"key": "work_links",
+									"value": "https://blue-pen.vercel.app/freelance/freelancer/technical",
+									"description": "user enters work links",
+									"type": "text"
+								},
+								{
+									"key": "linkedin",
+									"value": "https://www.linkedin.com/",
+									"description": "user enters linkedin link",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "some projects",
+									"description": "user types freelancing experience",
+									"type": "text"
+								},
+								{
+									"key": "past_work_files",
+									"value": "filename1_^_filename2_^_file3_^_file4_^_ifile5_^_",
+									"description": "uploads work files",
+									"type": "text"
+								},
+								{
+									"key": "resume",
+									"value": "filename1_^_filename2_^_file3_^_file4_^_ifile5_^_",
+									"description": "uploads resume",
+									"type": "text"
+								},
+								{
+									"key": "typing_speed",
+									"value": "2000-5000",
+									"description": "select typing speed",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/blue-pen-backend/api/freelancer/freelancersignup.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blue-pen-backend",
+								"api",
+								"freelancer",
+								"freelancersignup.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Team",
+			"item": [
+				{
+					"name": "allfreelancers.php",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/blue-pen-backend/api/team/allfreelancers.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blue-pen-backend",
+								"api",
+								"team",
+								"allfreelancers.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "connect.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/blue-pen-backend/api/connect.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"blue-pen-backend",
+						"api",
+						"connect.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

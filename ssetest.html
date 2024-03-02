@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Server Sent Events Test</title>
+</head>
+<body>
+    <h1>Server Sent Events Test</h1>
+    <div id="result"></div>
+
+    <script>
+        var source = new EventSource("ssetest.php");
+
+        source.onmessage = function(event) {
+            var data = JSON.parse(event.data);
+            document.getElementById('result').innerHTML += 'ID: ' + data.ID + ', Time: ' + data.time + '<br>';
+        };
+    </script>
+</body>
+</html>

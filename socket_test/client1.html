@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Client</title>
+</head>
+<body>
+    <script>
+        // Connect to the WebSocket server
+        const socket = new WebSocket('ws://localhost:8000');
+
+        // Handle messages from the server
+        socket.addEventListener('message', event => {
+            const message = event.data;
+            // Process the received message
+            console.log('Received message:', message);
+        });
+
+        // Send messages to the server
+        socket.addEventListener('open', () => {
+            socket.send('Hello, server!');
+        });
+    </script>
+</body>
+</html>

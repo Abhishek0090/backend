@@ -1,0 +1,1 @@
+import{ag as a,ah as r,ai as t}from"./main-7cd5216e.js";var e={},u=r;Object.defineProperty(e,"__esModule",{value:!0});var v=e.default=void 0,d=u(a()),i=t,o=(0,d.default)((0,i.jsx)("path",{d:"M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"}),"Add");v=e.default=o;export{v as d};

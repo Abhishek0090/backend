@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>JPG to PNG Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        .container {
+            margin-top: 100px;
+            text-align: center;
+        }
+        #inputFile {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JPEG to PNG Converter</h1>
+        <div class="card">
+            <div class="card-body">
+                <input type="file" id="inputFile" accept=".jpg" class="form-control-file" />
+                <button id="convertBtn" class="btn btn-primary mt-3">Convert to PNG</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function convertToPNG() {
+            const inputFile = document.getElementById('inputFile').files[0];
+
+            if (inputFile) {
+                if (inputFile.type !== 'image/jpeg') {
+                    alert('Only upload JPEG files.');
+                    return;
+                }
+
+                const reader = new FileReader();
+
+                reader.onload = function(event) {
+                    const img = new Image();
+                    img.src = event.target.result;
+
+                    img.onload = function() {
+                        const canvas = document.createElement('canvas');
+                        canvas.width = img.width;
+                        canvas.height = img.height;
+
+                        const context = canvas.getContext('2d');
+                        context.drawImage(img, 0, 0);
+
+                        const dataURL = canvas.toDataURL('image/png');
+
+                        // Create a download link for the converted PNG image
+                        const downloadLink = document.createElement('a');
+                        downloadLink.href = dataURL;
+                        downloadLink.download = 'converted.png';
+                        downloadLink.click();
+                    };
+                };
+
+                reader.readAsDataURL(inputFile);
+            }
+        }
+
+        document.getElementById('convertBtn').addEventListener('click', convertToPNG);
+    </script>
+</body>
+</html>

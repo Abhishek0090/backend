@@ -1,0 +1,123 @@
+[
+    {
+        "claim_id": "31",
+        "freelancer_id": "90",
+        "freelancer_name": " ",
+        "number_of_assignments": "17",
+        "reward": "Bluetooth Earphones",
+        "claim_datetime": "2022-06-02 15:59:01",
+        "claimed": "1",
+        "sent": "1",
+        "received": "1"
+    },
+    {
+        "claim_id": "30",
+        "freelancer_id": "1",
+        "freelancer_name": " ",
+        "number_of_assignments": "20",
+        "reward": "Zomato Gold",
+        "claim_datetime": "2022-06-02 15:44:44",
+        "claimed": "1",
+        "sent": "1",
+        "received": "1"
+    },
+    {
+        "claim_id": "29",
+        "freelancer_id": "90",
+        "freelancer_name": " ",
+        "number_of_assignments": "15",
+        "reward": "2 Movie Tickets",
+        "claim_datetime": "2022-06-02 15:44:41",
+        "claimed": "1",
+        "sent": "1",
+        "received": "1"
+    },
+    {
+        "claim_id": "28",
+        "freelancer_id": "1",
+        "freelancer_name": " ",
+        "number_of_assignments": "17",
+        "reward": "Bluetooth Earphones",
+        "claim_datetime": "2022-06-02 15:29:07",
+        "claimed": "1",
+        "sent": "1",
+        "received": "1"
+    },
+    {
+        "claim_id": "27",
+        "freelancer_id": "1",
+        "freelancer_name": " ",
+        "number_of_assignments": "15",
+        "reward": "2 Movie Tickets",
+        "claim_datetime": "2022-06-02 15:02:49",
+        "claimed": "1",
+        "sent": "1",
+        "received": "1"
+    },
+    {
+        "claim_id": "26",
+        "freelancer_id": "90",
+        "freelancer_name": " ",
+        "number_of_assignments": "10",
+        "reward": "Recharge",
+        "claim_datetime": "2022-06-02 15:02:40",
+        "claimed": "1",
+        "sent": "1",
+        "received": "1"
+    },
+    {
+        "claim_id": "25",
+        "freelancer_id": "1",
+        "freelancer_name": " ",
+        "number_of_assignments": "10",
+        "reward": "Recharge",
+        "claim_datetime": "2022-06-02 12:45:02",
+        "claimed": "1",
+        "sent": "1",
+        "received": "1"
+    },
+    {
+        "claim_id": "23",
+        "freelancer_id": "90",
+        "freelancer_name": " ",
+        "number_of_assignments": "5",
+        "reward": "Money Plant",
+        "claim_datetime": "2022-06-02 12:20:25",
+        "claimed": "1",
+        "sent": "1",
+        "received": "1"
+    },
+    {
+        "claim_id": "21",
+        "freelancer_id": "1",
+        "freelancer_name": " ",
+        "number_of_assignments": "5",
+        "reward": "Money Plant",
+        "claim_datetime": "2022-06-02 12:03:55",
+        "claimed": "1",
+        "sent": "1",
+        "received": "1"
+    },
+    {
+        "claim_id": "20",
+        "freelancer_id": "1",
+        "freelancer_name": " ",
+        "number_of_assignments": "3",
+        "reward": "Bluepen Kit",
+        "claim_datetime": "2022-06-02 11:13:52",
+        "claimed": "1",
+        "sent": "1",
+        "received": "1"
+    },
+    {
+        "claim_id": "19",
+        "freelancer_id": "90",
+        "freelancer_name": " ",
+        "number_of_assignments": "3",
+        "reward": "Bluepen Kit",
+        "claim_datetime": "2022-06-02 11:13:48",
+        "claimed": "1",
+        "sent": "1",
+        "received": "1"
+    }
+]

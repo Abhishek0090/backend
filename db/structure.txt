@@ -1,0 +1,11 @@
+freelancer/writer:
+
+1. one table to store id, email, basic details, password and status (only freelancer, only writer or both)
+2. separate table for freelancer specific details (can divide technical and non technical)
+3. separate table for writer specific details
+
+
+assignments to freelancers
+1. create table `map`
+2. `map` table will have `id`, `freelancer_id`, `assignment_id` and other fields
+3. other fields consist of status tabs (assigned, completed, etc.)

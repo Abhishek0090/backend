@@ -1,0 +1,1 @@
+[15-Apr-2023 15:08:52 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home1/bluepenc/public_html/test/data transfer/old_connect.php on line 8

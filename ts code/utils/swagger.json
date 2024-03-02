@@ -1,0 +1,90 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "This is a simple example NodeJS API project to demonstrate Swagger Documentation",
+        "version": "1.0.0",
+        "title": "Tasks API",
+        "contact": {
+            "email": "abc@gmail.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    "schemes": ["http"],
+    "host": "localhost:4000",
+    "basePath": "/",
+    "paths": {
+        "/ping": {
+            "get": {
+                "summary": "Gets healthcheck",
+                "description": "Tells whether server is running or not",
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/user/login": {
+            "post": {
+                "summary": "Login for existing Users",
+                "description": "Login Users or redirects to Signup",
+                "produces": ["application/json"],
+                "parameters": [{
+                    "email": "pranav@dev",
+                    "password": "daisy"
+                }],
+                "responses": {
+                    "200": {
+                        "type": {
+                            "$ref": "#definitions/user"
+                        },
+                        "description": "User was found and returned succesfully"
+                    }
+                }
+            }
+        },
+        "/user/signup": {
+            "post": {
+                "summary": "Signup for new users",
+                "description": "User can signup by providing email password and name",
+                "produces": ["application/json"],
+                "parameters": [{
+                    "name": "John Doe",
+                    "email": "eodnhoj@gmail.com",
+                    "password": "daisy"
+                }],
+                "responses": {
+                    "200": {
+                        "type": {
+                            "$ref": "#definitions/user"
+                        },
+                        "description": "User was signed up succesfully"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "user": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,14 @@
+1. create column in assignment_freelance called is_affiliate
+2. if assignment poster was referred then set is_affiliate to 1 else 0
+3. show referred status in assignment details page to team
+4. create affiliate section in team panel
+5. a. show list of affiliated assignments
+   b. when assignment status set to assigned to freelancer, enter data in affiliate payments table (id, assignment_id, affiliate_id, amount, status, paid_on_date)
+6. api to make payment
+7. graph of payment in team panel
+8. check affiliate payments table in user dashboard, fetch and display details
+
+ps:
+1. status in affiliate payments table
+1. enter data in table on assigned_to_freelancer_status. set status to 1
+2. on reset, set status to 0

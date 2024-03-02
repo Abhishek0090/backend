@@ -1,0 +1,4 @@
+1. convert status update of assignments (posted, under process, etc) to json in db
+2. while updating status, update json with status and date time of update and is_valid = 1 in json
+3. on performing reset, make all is_valid to 0 in all status jsons
+4. when user updates status, add new json with status and date time of update and is_valid = 1 in json

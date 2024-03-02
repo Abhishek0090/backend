@@ -1,0 +1,26 @@
+5 - Bronze I
+10 - Bronze II
+15 - Bronze III
+20 - Silver I
+25 - Silver II
+50 - Silver III 
+100 - Gold I
+200 - Gold II
+300 - Gold III
+400 - Platinum I
+500 - Platinum II
+750 - Platinum III
+1000 - Diamond
+
+
+
+
+Flow:-
+1. Run script to get rewards received by freelancers
+2. Store all given rewards in database
+3. replace all old rewards milestones with new milestones and gift with surprise gift
+4. On clicking confirm, use new milestones
+5. Display old received rewards in team panel table
+6. Display new rewards in team panel table
+7. Display old rewards and new milestones in freelancer panel
+8. Display new milestones on bluepen.co.in/freelance

@@ -1,0 +1,67 @@
+<html>
+    
+    <head>
+        <script src="https://sdk.cashfree.com/js/ui/2.0.0/cashfree.sandbox.js"></script>
+        <style>
+            body{
+            text-align: center;
+            font-family: "Inter";
+            }
+            .dropin-parent{
+            max-width:420px;
+            margin: auto;
+            margin-top:20px;
+            }
+            .order-token {
+            font-weight: 600;
+            }
+            .inputText {
+            width: 200px;
+            }
+            .btn-render {
+                border-radius: 6px;
+                background-color: rgb(105, 51, 211);
+                color: rgb(255, 255, 255);
+            border: none;
+            font-size: 14px;
+            padding: 11px 16px;
+            }
+            input {
+            padding: 0.67857143em 1em;
+            border-radius: 6px;
+            border: 1px solid #979797;
+            }
+            input:focus {
+            outline-color: rgb(105, 51, 211);
+            }
+            .style-dropin {
+            outline: 0;
+            border-width: 0 0 1px;
+            border-radius: 0px;
+            }
+            .style-dropin:focus {
+            border-color: rgb(105, 51, 211);
+            }
+            .style-container {
+            margin-bottom: 8px;
+            }
+        </style>
+    </head>
+
+    <body onload="render()">
+    <input type="hidden" placeholder="order_token" id="paymentSessionId" value="session_ZdPgv8Y4eF9sgLS_4RDg4JDV-67qlOwhLym8Gy0QRE8nSlbFMi6nn7jEwc238rE-ThkZkzKMacC8LYyUapTzilRr-4I2Bq7RDp0VAd3r2lnS" class="inputText">
+    <!--<button class="btn-render" onclick=render()>Render</button>-->
+    </div>
+    <script>
+        function render() {
+        let paymentSessionId = document.getElementById("paymentSessionId").value;
+        if (paymentSessionId == "") {
+            location.href = "https://test.bluepen.co.in/userwallet.php?message=failure";
+        }
+        const cf = new Cashfree(paymentSessionId);
+        cf.redirect();
+        };
+    </script>
+    </body>
+
+</html>

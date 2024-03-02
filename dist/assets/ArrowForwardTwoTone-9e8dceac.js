@@ -1,0 +1,1 @@
+import{ag as r,ah as a,ai as o}from"./main-f01344a0.js";var e={},t=a;Object.defineProperty(e,"__esModule",{value:!0});var u=e.default=void 0,d=t(r()),i=o,l=(0,d.default)((0,i.jsx)("path",{d:"m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"}),"ArrowForwardTwoTone");u=e.default=l;export{u as d};

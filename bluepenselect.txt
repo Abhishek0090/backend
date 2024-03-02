@@ -1,0 +1,7 @@
+admin:-
+    button to add user to select program (user id in params. store current date time and expiry, i.e. one year from now)
+    button to remove user from select program (user id in params. change status to inactive)
+    send select data bit in student table page and details page
+
+student:-
+    show select data bit in student dashboard api
